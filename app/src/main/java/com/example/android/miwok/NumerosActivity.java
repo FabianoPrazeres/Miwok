@@ -35,9 +35,7 @@ public class NumerosActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.lista);
 
         listView.setAdapter(itemsAdapter);
-
-        String teste;
-
+        
     }
 
 }
