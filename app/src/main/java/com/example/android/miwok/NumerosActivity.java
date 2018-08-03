@@ -2,12 +2,7 @@ package com.example.android.miwok;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -16,7 +11,7 @@ public class NumerosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numeros);
+        setContentView(R.layout.activity_padrao);
 
         ArrayList <Palavras> palavras = new ArrayList<Palavras>();
         palavras.add(new Palavras("um", "Lutti"));
@@ -36,7 +31,6 @@ public class NumerosActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.lista);
 
         listView.setAdapter(palavrasAdapter);
-
 
     }
 
