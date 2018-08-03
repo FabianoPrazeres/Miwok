@@ -18,24 +18,25 @@ public class NumerosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros);
 
-        ArrayList <String> palavras = new ArrayList<>();
-        palavras.add("um");
-        palavras.add("dois");
-        palavras.add("três");
-        palavras.add("quatro");
-        palavras.add("cinco");
-        palavras.add("seis");
-        palavras.add("sete");
-        palavras.add("oito");
-        palavras.add("nove");
-        palavras.add("dez");
+        ArrayList <Palavras> palavras = new ArrayList<Palavras>();
+        palavras.add(new Palavras("um", "Lutti"));
+        palavras.add(new Palavras("dois","otiiko"));
+        palavras.add(new Palavras("três","tolookosu"));
+        palavras.add(new Palavras("quatro","oyyisa"));
+        palavras.add(new Palavras("cinco","massokka"));
+        palavras.add(new Palavras("seis","temmokka"));
+        palavras.add(new Palavras("sete","kenekaku"));
+        palavras.add(new Palavras("oito","kawinta"));
+        palavras.add(new Palavras("nove","wo’e"));
+        palavras.add(new Palavras("dez","na’aacha"));
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, palavras);
+
+        PalavrasAdapter palavrasAdapter = new PalavrasAdapter(this, palavras);
 
         ListView listView = (ListView) findViewById(R.id.lista);
 
-        listView.setAdapter(itemsAdapter);
-        
+        listView.setAdapter(palavrasAdapter);
+
     }
 
 }
