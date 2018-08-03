@@ -37,6 +37,7 @@ public class NumerosActivity extends AppCompatActivity {
 
         listView.setAdapter(palavrasAdapter);
 
+
     }
 
 }
