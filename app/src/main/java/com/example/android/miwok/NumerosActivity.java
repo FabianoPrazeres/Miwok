@@ -14,16 +14,16 @@ public class NumerosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_padrao);
 
         ArrayList <Palavras> palavras = new ArrayList<Palavras>();
-        palavras.add(new Palavras("um", "Lutti"));
-        palavras.add(new Palavras("dois","otiiko"));
-        palavras.add(new Palavras("três","tolookosu"));
-        palavras.add(new Palavras("quatro","oyyisa"));
-        palavras.add(new Palavras("cinco","massokka"));
-        palavras.add(new Palavras("seis","temmokka"));
-        palavras.add(new Palavras("sete","kenekaku"));
-        palavras.add(new Palavras("oito","kawinta"));
-        palavras.add(new Palavras("nove","wo’e"));
-        palavras.add(new Palavras("dez","na’aacha"));
+        palavras.add(new Palavras("um", "Lutti", R.drawable.number_one));
+        palavras.add(new Palavras("dois","otiiko", R.drawable.number_two));
+        palavras.add(new Palavras("três","tolookosu", R.drawable.number_three));
+        palavras.add(new Palavras("quatro","oyyisa", R.drawable.number_four));
+        palavras.add(new Palavras("cinco","massokka", R.drawable.number_five));
+        palavras.add(new Palavras("seis","temmokka", R.drawable.number_six));
+        palavras.add(new Palavras("sete","kenekaku", R.drawable.number_seven));
+        palavras.add(new Palavras("oito","kawinta", R.drawable.number_eight));
+        palavras.add(new Palavras("nove","wo’e", R.drawable.number_nine));
+        palavras.add(new Palavras("dez","na’aacha", R.drawable.number_ten));
 
 
         PalavrasAdapter palavrasAdapter = new PalavrasAdapter(this, palavras);
