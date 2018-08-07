@@ -4,7 +4,8 @@ public class Palavras {
 
     private String mTraducaoPadrao;
     private String mTraducaoMiwok;
-    private int mImagem;
+    private int mImagem = SEM_IMAGEM;
+    private static final int SEM_IMAGEM = -1;
 
     public Palavras (String traducaoPadrao, String traducaoMiwok){
         mTraducaoPadrao = traducaoPadrao;
@@ -15,6 +16,10 @@ public class Palavras {
         mImagem = imagem;
         mTraducaoMiwok = traducaoMiwok;
         mTraducaoPadrao = traducaoPadrao;
+    }
+
+    public boolean temImagem(){
+        return mImagem != SEM_IMAGEM;
     }
 
     public String getTraducaoPadrao(){

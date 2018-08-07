@@ -14,16 +14,16 @@ public class CoresActivity extends AppCompatActivity {
         setContentView(R.layout.activity_padrao);
 
         ArrayList<Palavras> palavras = new ArrayList<Palavras>();
-        palavras.add(new Palavras("vermelho", "weṭeṭṭi",R.drawable.color_red));
-        palavras.add(new Palavras("verde","chokokki", R.drawable.color_green));
-        palavras.add(new Palavras("marrom","ṭakaakki",R.drawable.color_brown));
-        palavras.add(new Palavras("cinza","ṭopoppi",R.drawable.color_gray));
-        palavras.add(new Palavras("preto","kululli",R.drawable.color_black));
-        palavras.add(new Palavras("branco","kelelli",R.drawable.color_white));
-        palavras.add(new Palavras("amarelo claro","ṭopiisә",R.drawable.color_dusty_yellow));
-        palavras.add(new Palavras("amarelo mostarda","chiwiiṭә",R.drawable.color_mustard_yellow));
+        palavras.add(new Palavras("Vermelho", "Weṭeṭṭi",R.drawable.color_red));
+        palavras.add(new Palavras("Verde","Chokokki", R.drawable.color_green));
+        palavras.add(new Palavras("Marrom","Takaakki",R.drawable.color_brown));
+        palavras.add(new Palavras("Cinza","Topoppi",R.drawable.color_gray));
+        palavras.add(new Palavras("Preto","Kululli",R.drawable.color_black));
+        palavras.add(new Palavras("Branco","Kelelli",R.drawable.color_white));
+        palavras.add(new Palavras("Amarelo claro","Topiisә",R.drawable.color_dusty_yellow));
+        palavras.add(new Palavras("Amarelo mostarda","Chiwiiṭә",R.drawable.color_mustard_yellow));
 
-        PalavrasAdapter palavrasAdapter = new PalavrasAdapter(this, palavras);
+        PalavrasAdapter palavrasAdapter = new PalavrasAdapter(this, palavras, R.color.category_colors);
 
         ListView listView = (ListView) findViewById(R.id.lista);
 
